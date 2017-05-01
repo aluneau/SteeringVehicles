@@ -9,7 +9,7 @@ function setup() {
 	createCanvas(720, 400);
 	background(200);
 
-	for(var i=0; i < 1; i++){
+	for(var i=0; i < 10; i++){
 		vehicles.push(new Vehicle(Math.random()*width,Math.random()*height));
 	}
 	for (var i=0; i<10; i++){
