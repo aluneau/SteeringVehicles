@@ -58,6 +58,7 @@ function Vehicle(x,y){
 		var theta = Math.atan2(this.velocity.y, this.velocity.x) + Math.PI/2;
 		fill(204, 101, 192, 127);
   		stroke(127, 63, 120);
+  		push();
   		translate(this.position.x, this.position.y);
 		rotate(theta);
 		fill(255);
@@ -68,6 +69,7 @@ function Vehicle(x,y){
 	    vertex(-this.r, this.r * 2);
 	    vertex(this.r, this.r * 2);
 	    endShape(CLOSE);
+	    pop();
 
 	}
 }
